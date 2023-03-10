@@ -1,5 +1,6 @@
 # XPS13-9360-Opencore
 EFI for Opencore Hackintosh on Dell XPS 13 9360
+Based on Dortania Guide and inspiration from the following repos.
 
 ## Related repos:
 
@@ -125,3 +126,6 @@ I added a bit of kapton tape to close the gap between the fan and the heatpipe. 
 TODO: Add images
 
 With the undervolting and hardware tuning combined, this thing can easily boost all day at turbo clock speed.
+
+
+Credits to all the developers that made this possible!
