@@ -18,16 +18,39 @@ SMBIOS: MacBookPro14,1
 
 Thunderbolt not tested.
 
+Triple-boot of :
+- macOS Ventura 13.2.1
+- Ubuntu
+- Windows 11
+
 ## ACPI
-### By myself with SSDTTime
+### With SSDTTime
 - EC
 - PLUG
 - PNLF
 - XOSI
 - USBX
 
-### Ripped or manually written
+### Ripped or done manually
 - All the others ;)
+
+TODO: Specify more
+
+## Drivers
+- ext4_x64 (dunno why, maybe it was neccessary)
+- HfsPlus
+- OpenCanopy
+- OpenLinuxBoot
+- OpenRuntime
+
+## Tools
+- CleanNvram
+- ControlMsrE2
+- OpenShell
+- setup_var (I threw it in there, can by anywhere else. See BIOS Modding for use)
+
+## Resources
+BlackOSX/BsxM1 - looks very sexy ;)
 
 ## Kexts
 ### Basics
