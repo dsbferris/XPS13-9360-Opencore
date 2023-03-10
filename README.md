@@ -127,5 +127,26 @@ TODO: Add images
 
 With the undervolting and hardware tuning combined, this thing can easily boost all day at turbo clock speed.
 
+## Useful Software
+### macOS
+- Stats
+- Intel Power Gadget
+- maciASL
+- ProperTree (build the app from scripts folder, right click any plist file -> information -> set open with ProperTree)
+- SSDTTime
+- Karabiner Elements (keyboard mod for my qwertz to have all keys match)
+- IORegExplorer
+- MonitorControl (mostly for Desktops or dual monitor scenario)
+- Endurance (stress test)
+- DiffMerge (comparing configs)
+- Pre-download XCode Commandline Tools with a free Apple Developer Account https://developer.apple.com/download/all/
+- HomeBrew!!! with newest python, python-tk, 7z, smartmontools
+- Having a full macOS offline installer at hand. Troubleshooting and redownloading from recovery every time ain't fun...
+
+I actually don't use MountEFI, but rather do it myself with: 
+
+diskutil list \
+diskutil mount disk0s1 (adjust for yourself)
+
 
 Credits to all the developers that made this possible!
