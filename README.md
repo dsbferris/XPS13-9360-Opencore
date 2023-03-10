@@ -18,7 +18,18 @@ SMBIOS: MacBookPro14,1
 
 Thunderbolt not tested.
 
-## Kexts (might be useful)
+## ACPI
+### By myself with SSDTTime
+- EC
+- PLUG
+- PNLF
+- XOSI
+- USBX
+
+### Ripped or manually written
+- All the others ;)
+
+## Kexts
 ### Basics
 - SMC..
   - Battery
@@ -53,6 +64,12 @@ Thunderbolt not tested.
 - VoodooI2CHID (touchscreen sleep issue fixed, so fully working)
 - VoodooPS2Controller (delete VoodooInput from Plugins not to interfere with the one from VoodooI2C)
 
+## Config
+Additionally I did (more like ripped) the following:
+
+Wakeup from keypress
+PciRoot(0x0)/Pci(0x14,0x0) -> acpi-wake-type -> Data [01]
+
 ## BIOS Settings
 TODO
 
@@ -78,9 +95,9 @@ TODO: Add which parameters I changed
 On my machine -90mV on everything seems fine.
 
 ## Hardware tuning
-I did a fresh thermalpaste application.
+I did a fresh thermal paste application.
 I generously added Thermalpads onto the heatpipe to make contact with the backplate.
-I added a bit of kapton tape to close the gap between the fan and the heatpipe. This hopefully prevents hot air getting back inside the case instead of being blown out. Before I got myself some kapton tape I used casual masking tape, which turned out to be fine, but you might risk the adhesive melting when under high temperature.
+I added a bit of kapton tape to close the gap between the fan and the heatpipe. This hopefully prevents hot air getting back inside the case instead of being blown out. Before I got myself some kapton tape I used casual masking tape, which turned out to be fine, but you might risk the adhesive melting under higher temperatures.
 
 TODO: Add images
 
