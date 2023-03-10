@@ -102,7 +102,7 @@ I was able to downgrade from 2.21.0 by hitting F12 and Flash from USB.
 
 **DONT** simply copy paste my VarStoreOffset, as these can differ on you machine. Changing something different might brick your machine, having to flash with somethink like a CH341A.
 
-To get started, go ahead using Intel ME to get a biosreg.bin dump. Then use UEFITool to get Section_PE32_image_Setup.sct. Then use ifrextract to get the text file containing the informations I noted down in BIOS.md.
+To get started, go ahead using Intel ME to get a biosreg.bin dump. Then use [UEFITool](https://github.com/LongSoft/UEFITool) to get Section_PE32_image_Setup.sct. Then use ifrextract to get the text file containing the informations I noted down in BIOS.md.
 Write down your offsets and possible values.
 From Opencore run OpenShell and run https://github.com/datasone/setup_var.efi to change your values.
 
