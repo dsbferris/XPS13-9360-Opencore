@@ -1,5 +1,5 @@
 # XPS13-9360-Opencore
-EFI for Opencore Hackintosh on Dell XPS 13 9360
+OpenCore on Dell XPS 13 9360 \
 Based on Dortania Guide and inspiration from the following repos.
 
 ## Related repos:
@@ -10,10 +10,16 @@ Based on Dortania Guide and inspiration from the following repos.
 
 
 ## System Specs:
-- i7 7550U
-- iGPU HD 620
-- QHD Monitor
-- Fenvi BCM94360ng from [here](https://de.aliexpress.com/item/32464748097.html?spm=a2g0o.store_pc_topSellerIng.8148356.26.3c362cf2tGldrX&pdp_npi=2%40dis%21EUR%21€%2072%2C37%21€%2039%2C08%21%21%21%21%21%4021038edf16784729040303144e2c59%2110000006058658845%21sh)
+| Type | Model |
+| - | - |
+| CPU | i7 7500U 2C/4T |
+| RAM | 16 GB DDR3 |
+| GPU | Intel HD 620 |
+| Display | 13,3" Sharp SHP144 LQ133Z1 QHD+ (3200x1800) Touchscreen display |
+| Wi-Fi | Fenvi BCM94360ng from [here](https://de.aliexpress.com/item/32464748097.html?spm=a2g0o.store_pc_topSellerIng.8148356.26.3c362cf2tGldrX&pdp_npi=2%40dis%21EUR%21€%2072%2C37%21€%2039%2C08%21%21%21%21%21%4021038edf16784729040303144e2c59%2110000006058658845%21sh) |
+| Audio | ALC3246 (ALC256) |
+| Cardreader | RTS525A |
+| BIOS Version | 2.13.0 |
 
 SMBIOS: MacBookPro14,1
 
@@ -38,11 +44,11 @@ Triple-boot of :
 TODO: Specify more
 
 ## Drivers
-- ext4_x64 (dunno why, maybe it was neccessary)
+- OpenRuntime
 - HfsPlus
 - OpenCanopy
 - OpenLinuxBoot
-- OpenRuntime
+- ext4_x64
 
 ## Tools
 - CleanNvram
@@ -79,6 +85,9 @@ BlackOSX/BsxM1 - looks very sexy ;)
 - NVMEFix
 
 ### Cardreader
+Try one of these. \
+TODO: Benchmark/Test them all 
+
 - https://github.com/0xFireWolf/RealtekCardReader
 - https://github.com/acidanthera/EmeraldSDHC
 - https://github.com/cholonam/Sinetek-rtsx
@@ -126,6 +135,15 @@ I added a bit of kapton tape to close the gap between the fan and the heatpipe. 
 TODO: Add images
 
 With the undervolting and hardware tuning combined, this thing can easily boost all day at turbo clock speed.
+
+## Display Profiles
+Thanks @[the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
+
+Display profiles for the Sharp LQ133Z1 display (Dell XPS 9360 QHD+) are included in the displays folder.
+
+Profiles can be installed by copying them into `/Users/<username>/Library/ColorSync/Profiles` folder, additionally the macOS built-in `ColorSync` utility can be used to inspect the profiles.
+
+Profiles are configured on a per display basis in the `System Preferences` -> `Display` preferences menu.
 
 ## Useful Software
 ### macOS
